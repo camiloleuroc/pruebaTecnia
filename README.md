@@ -43,6 +43,26 @@ Esta API proporciona endpoints para gestionar el agendamiento de citas en una pe
    ```bash
    python main.py
 
+7. Para la configuración del envío de correos se debe completar las variables del archivo email_config.py, a continuacón un breve tutorial de donde extraer app_password, el user es el correo de origen.
+  1. Inicia sesión en tu cuenta de Google.
+
+  2. Visita la página de "Security" (Seguridad) de tu cuenta Google: https://myaccount.google.com/security-checkup
+
+  3. En la sección "Signing in to Google" (Inicio de sesión en Google), busca la opción "App passwords" (Contraseñas de aplicaciones) y haz clic en "App passwords" o visita directamente: https://myaccount.google.com/apppasswords
+
+  4. Selecciona "Mail" (Correo) en la lista desplegable de "Select app" (Seleccionar aplicación).
+
+  5. Selecciona "Other (Custom name)" (Otro - Nombre personalizado) en la lista desplegable de "Select device" (Seleccionar dispositivo).
+
+  6. Ingresa un nombre personalizado para identificar esta contraseña específica de la aplicación.
+
+  7. Haz clic en "Generate" (Generar).
+
+  8. Google generará una contraseña específica de la aplicación para tu aplicación. Cópiala.
+
+  9. Utiliza esta contraseña específica de la aplicación en tu script de Python en lugar de tu contraseña principal.
+
+  
 # ENDPOINTS
 
 Según donde se lance el script se debe agregar la url con el puerto 5000 para realizar las peticiones, en este caso que es localhost se utiliza "http://127.0.0.1:5000/":
