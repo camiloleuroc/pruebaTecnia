@@ -32,7 +32,7 @@ Esta API proporciona endpoints para gestionar el agendamiento de citas en una pe
 
    ```bash
    pip install -r requirements.txt
-   
+
 5. Una vez realizado esto dentro del directorio "pruebaTecnica" se ejecutara pytest sin argumento y el solo buscará los archivos test para comprobar el estado del aplicativo.
    
    ```bash
@@ -62,6 +62,7 @@ Esta API proporciona endpoints para gestionar el agendamiento de citas en una pe
 
   9. Utiliza esta contraseña específica de la aplicación en tu script de Python en lugar de tu contraseña principal.
 
+NOTA: En dado caso de presentar problemas con dependencias utilizar el environment que se encuentra en el siguiente link: https://drive.google.com/file/d/11-1PXWM3b7a4VIcQgUrmhB_tbNGW8K_X/view?usp=sharing
   
 # ENDPOINTS
 
