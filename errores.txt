@@ -23,6 +23,8 @@
 222 Error validation client, client not exists.
 223 Error validate client, please consult with administrator.
 224 Appointment scheduled successfully but confirmation email no send.
-225 Error consulting best client, please consult with administrator
-226 Error consulting best service, please consult with administrator
-227 Error prediction model, please consult with administrator
+225 Error consulting best client, please consult with administrator.
+226 Error consulting best service, please consult with administrator.
+227 Error prediction model, please consult with administrator.
+228 Error consulting appointments, please consult with administrator.
+229 Error update appointments, please consult with administrator.

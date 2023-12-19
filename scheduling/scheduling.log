@@ -351,3 +351,49 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNI
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error consulting appointments, please consult with administrator Object of type time is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:00:34] "GET /get_appointments HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error consulting appointments, please consult with administrator Object of type time is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:02:07] "GET /get_appointments HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:02:39] "GET /get_appointments HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:07:38] "POST /update_appointment HTTP/1.1" 200 -
+ERROR:root:Error update appoinment, please consult with administrator name 'result' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:07:47] "POST /update_appointment HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 14:08:22] "POST /update_appointment HTTP/1.1" 200 -

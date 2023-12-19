@@ -492,9 +492,87 @@ def book_appointment():
 		logging.error('Error consult parameters, please validate arguments '+str(e))
 		return jsonify({'status': 201, 'message':'Error consult parameters, please validate arguments'})
 
+@app.route('/get_appointments', methods=['GET'])
+def get_appointments():
+	"""Función de consultar todas las citas agendadas"""
+	# Extraccion de apikey desde el Header
+	apikey = request.headers.get('apikey')
+
+	try:
+		# Consulta de apikey
+		api_validation = ApiKeys.query.filter(ApiKeys.apikey == apikey, 
+			ApiKeys.state == True).first()
+
+		# Validación de estado de la apikey
+		if api_validation != None:
+
+			try:
+				# Consulta del usuario que más solicitudes ha realizado
+				appointments = Appointment.query.all()
+				result = {
+					'Appointments': [
+						{
+							'id': appointment.id, 
+							'date': str(appointment.date),
+							'time': str(appointment.time),
+							'client_id': appointment.client_id,
+							'service_id': appointment.service_id,
+							'hairdresser_id': appointment.hairdresser_id
+						}
+						for appointment in appointments
+					]
+				}
+				
+				return jsonify({'status': 200, 'message':'Appoinments', 'data':result})
+			except Exception as e:
+				logging.error('Error consulting appointments, please consult with administrator '+str(e))
+				return jsonify({'status': 228, 'message':'Error consulting appointments, please consult with administrator'})
+		else:
+			logging.error('API not enabled, please verify your API key')
+			return jsonify({'status': 205, 'message':'API not enabled, please verify your API key'})
+
+	except Exception as e:
+		logging.error('Error validate API key, please consult with administrator '+str(e))
+		return jsonify({'status': 204, 'message':'Error validate API key, please consult with administrator'})
+
+@app.route('/update_appointment', methods=['POST'])
+def update_appointment():
+	"""Función de actualización de citas para inactivarlas"""
+	appointment = request.get_json()['appointment']
+
+	# Extraccion de apikey desde el Header
+	apikey = request.headers.get('apikey')
+
+	try:
+		# Consulta de apikey
+		api_validation = ApiKeys.query.filter(ApiKeys.apikey == apikey, 
+			ApiKeys.state == True).first()
+
+		# Validación de estado de la apikey
+		if api_validation != None:
+
+			try:
+				# Consulta del usuario que más solicitudes ha realizado
+				
+				appointment = Appointment.query.get(appointment)
+				appointment.state = True
+				db.session.commit()
+
+				return jsonify({'status': 200, 'message':'Update appointment successfully'})
+			except Exception as e:
+				logging.error('Error update appoinment, please consult with administrator '+str(e))
+				return jsonify({'status': 229, 'message':'Error update appoinment, please consult with administrator'})
+		else:
+			logging.error('API not enabled, please verify your API key')
+			return jsonify({'status': 205, 'message':'API not enabled, please verify your API key'})
+
+	except Exception as e:
+		logging.error('Error validate API key, please consult with administrator '+str(e))
+		return jsonify({'status': 204, 'message':'Error validate API key, please consult with administrator'})
+
 @app.route('/best_client', methods=['GET'])
 def best_client():
-
+	"""Función para la consulta del mejor cliente"""
 	# Extraccion de apikey desde el Header
 	apikey = request.headers.get('apikey')
 
@@ -532,6 +610,7 @@ def best_client():
 
 @app.route('/best_service', methods=['GET'])
 def best_service():
+	"""Función para la consulta del mejor servicio"""
 	# Extraccion de apikey desde el Header
 	apikey = request.headers.get('apikey')
 
@@ -567,6 +646,7 @@ def best_service():
 
 @app.route('/predict_twodays', methods=['GET'])
 def predict_twodays():
+	"""Función para la predicción de cantidad de clientes posibles a ir los 2 dias siguientes"""
 	# Extraccion de apikey desde el Header
 	apikey = request.headers.get('apikey')
 
