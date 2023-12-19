@@ -1,0 +1,28 @@
+200 Correct Response.
+201 Error consult parameter user, please validate arguments.
+202 Error to create user, please consult with administrator.
+203 Error generate API key, please consult with administrator.
+204 Error validate API key, please consult with administrator.
+205 API not enabled, please verify your API key.
+206 Error validate client, please consult with administrator.
+207 Error create client, please consult with administrator.
+208 User exists.
+209 Not users register.
+210 Not type available.
+211 Error create user, services not exists.
+212 Service exists.
+213 Error create service, please consult with administrator.
+214 Error validate service, please consult with administrator.
+215 Error create appointment, busy hairdresser schedule.
+216 Error create appointment, please consult with administrator.
+217 Error validation service, service not exists for hairdresser.
+218 Error validation service, service not exists.
+219 Error validation service, please consult with administrator.
+220 Error validation service, hairdresser not exist.
+221 Error validation hairdresser, please consult with administrator.
+222 Error validation client, client not exists.
+223 Error validate client, please consult with administrator.
+224 Appointment scheduled successfully but confirmation email no send.
+225 Error consulting best client, please consult with administrator
+226 Error consulting best service, please consult with administrator
+227 Error prediction model, please consult with administrator
