@@ -1,0 +1,353 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:26:54] "GET /best_client HTTP/1.1" 200 -
+INFO:root:User create successfull, return apikey
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:28:10] "GET /generate_apikey?user=andres HTTP/1.1" 200 -
+INFO:root:Error create user, services not exists[2, 3]
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:28:15] "POST /create_user HTTP/1.1" 200 -
+INFO:root:User create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:28:28] "POST /create_user HTTP/1.1" 200 -
+INFO:root:User create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:28:34] "POST /create_user HTTP/1.1" 200 -
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:28:56] "POST /create_service HTTP/1.1" 200 -
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:00] "POST /create_service HTTP/1.1" 200 -
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:04] "POST /create_service HTTP/1.1" 200 -
+INFO:root:Error create user, services not exists[2, 3]
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:09] "POST /create_user HTTP/1.1" 200 -
+INFO:root:Service create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:18] "POST /create_service HTTP/1.1" 200 -
+INFO:root:Service create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:23] "POST /create_service HTTP/1.1" 200 -
+INFO:root:Service create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:27] "POST /create_service HTTP/1.1" 200 -
+INFO:root:User create successfull
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:29] "POST /create_user HTTP/1.1" 200 -
+INFO:root:Result users: {'Clients': [{'id': 1, 'name': 'Camilo', 'phone': 3023043359, 'email': 'camilo@test.com'}, {'id': 2, 'name': 'Andres', 'phone': 3023043359, 'email': 'andres@test.com'}]}
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:33] "GET /get_users?type_user=Client HTTP/1.1" 200 -
+INFO:root:Result services: {'Services': [{'id': 1, 'name': 'CORTE CABELLO'}, {'id': 2, 'name': 'MANICURE'}, {'id': 3, 'name': 'PEDICURE'}]}
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:37] "GET /get_services HTTP/1.1" 200 -
+ERROR:root:Error validation service, service not exists for hairdresser
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:29:52] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:00] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:15] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:23] "POST /book_appointment HTTP/1.1" 200 -
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:28] "GET /best_client HTTP/1.1" 200 -
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:33] "GET /best_client HTTP/1.1" 200 -
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:30:35] "GET /best_client HTTP/1.1" 200 -
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:31:42] "GET /best_client HTTP/1.1" 200 -
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 11:31:50] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:17:31] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:17:51] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:CLIENEEEETENTETE(1, 2)
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:18:07] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:CLIENEEEETENTETE2
+ERROR:root:Error validate API key, please consult with administrator Object of type Row is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:18:49] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator 'Client' object has no attribute 'first'
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:21:18] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:22:42] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:API not enabled, please verify your API key
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:25:44] "GET /best_service HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:26:16] "GET /best_service HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:27:39] "GET /best_client HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:27:46] "GET /best_service HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validation service, service not exists for hairdresser
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:33:37] "POST /book_appointment HTTP/1.1" 200 -
+ERROR:root:Error create appointment, busy hairdresser schedule
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:33:41] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:10] "POST /book_appointment HTTP/1.1" 200 -
+ERROR:root:Error create appointment, busy hairdresser schedule
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:13] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:20] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:34] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:39] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:42] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:34:53] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:03] "POST /book_appointment HTTP/1.1" 200 -
+ERROR:root:Error create appointment, busy hairdresser schedule
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:05] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:10] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:15] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:19] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:23] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:27] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:34] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:41] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:45] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:48] "POST /book_appointment HTTP/1.1" 200 -
+INFO:root:Appointment scheduled successfully but confirmation email no send.
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:35:51] "POST /book_appointment HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:AQUIIIIIIII <class 'datetime.date'>
+ERROR:root:Error validate API key, please consult with administrator name 'servi' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:38:20] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:AQUIIIIIIII (datetime.date(2023, 6, 6), 6)
+INFO:root:AQUIIIIIIII (datetime.date(2023, 6, 8), 5)
+INFO:root:AQUIIIIIIII (datetime.date(2023, 6, 5), 5)
+INFO:root:AQUIIIIIIII (datetime.date(2023, 6, 7), 4)
+ERROR:root:Error validate API key, please consult with administrator name 'servi' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:38:47] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:AQUIIIIIIII          date  total
+0  2023-06-06      6
+1  2023-06-08      5
+2  2023-06-05      5
+3  2023-06-07      4
+ERROR:root:Error validate API key, please consult with administrator name 'servi' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:45:37] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator "None of ['dates'] are in the columns"
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:47:29] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:AQUIIIIIIII 4    4.000001
+5    3.000281
+Name: predicted_mean, dtype: float64
+ERROR:root:Error validate API key, please consult with administrator name 'servi' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:47:55] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:AQUIIIIIIII             total
+date             
+2023-06-06      6
+2023-06-08      5
+2023-06-05      5
+2023-06-07      4
+INFO:root:AQUIIIIIIII 4    4.000001
+5    3.000281
+Name: predicted_mean, dtype: float64
+ERROR:root:Error validate API key, please consult with administrator name 'servi' is not defined
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:48:52] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:50:40] "GET /predict_twodays HTTP/1.1" 200 -
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:51:15] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:51:39] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:52:44] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:4    4.000001
+5    3.000281
+Name: predicted_mean, dtype: float64
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:53:09] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:<class 'pandas.core.series.Series'>
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:53:34] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+ERROR:root:Error validate API key, please consult with administrator 0
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:54:12] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:root:4.0000008881471585
+INFO:root:{'one_day_ahead': 4.0000008881471585, 'two_days_ahead': 3.0002809134025172}
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:54:57] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:55:18] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 12:57:07] "GET /predict_twodays HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
+INFO:werkzeug: * Detected change in 'C:\\Users\\CAMILO\\Documents\\PRUEBAS_TECNICAS\\GITs\\pruebaTecnica\\scheduling\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 803-199-949
